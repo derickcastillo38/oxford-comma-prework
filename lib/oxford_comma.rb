@@ -10,5 +10,6 @@ def oxford_comma(array)
       " #{el}" unless idx == -1 && unless idx == 0
       " and #{el}" if idx == -1
       "#{el}" if idx == 0
+    end
   end
 end

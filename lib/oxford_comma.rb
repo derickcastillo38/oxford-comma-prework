@@ -6,7 +6,7 @@ def oxford_comma(array)
   elsif array.size == 3
     "#{array.first}, #{array[1]}, and #{array.last}"
   else
-    array.each_with_index do |el, idx|
+    array.map.with_index do |el, idx|
       " #{el}" unless idx == -1 && unless idx == 0
       " and #{el}" if idx == -1
       "#{el}" if idx == 0

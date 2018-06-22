@@ -10,10 +10,10 @@ def oxford_comma(array)
     array.each_with_index do |el, idx|
       if idx == 0
         answer << "#{el},"
-      elsif idx == -1
-        answer << " and #{el}"
-      elsif idx > 0 && idx < (array.size-2)
+      elsif idx > 0 && idx < (array.size - 1)
         answer << " #{el},"
+      elsif idx == (array.size - 1)
+        answer << " and #{el}"
       end
     end
     answer
